@@ -1,0 +1,139 @@
+.App {
+  width: 70%;
+
+  margin: 2em auto;
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input input, .todo-input textarea {
+  padding: 1em 1.5em;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 100%;
+
+  font-size: 16px;
+  color: #666;
+
+  border: 1px solid silver;
+  border-radius: 5px;
+  outline: none;
+
+  box-shadow: 0px 10px 20px rgba(180, 180, 180, .15);
+  margin-bottom: 1em;
+}
+
+.todo-input button {
+  width: 100%;
+  border: 0px;
+  border-radius: 5px;
+  padding: .7em;
+
+  background: #5199FF;
+  color: #fff;
+  font-weight: 700;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  letter-spacing: .15em;
+  box-shadow: 0px 10px 20px hsla(215, 97%, 38%, .15);
+}
+
+.items-list {
+  margin-top: 2em;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid silver;
+  padding: 1em;
+
+  cursor: pointer;
+  border-radius: 5px;
+  
+  margin-bottom: 1.2em;
+  box-shadow: 0px 10px 20px rgba(180, 180, 180, .25);
+}
+
+.todo-item:last-of-type {
+  margin-bottom: 0px;
+}
+
+.todo-item > .todo-body {
+  display: none;
+
+  margin-top: 1em;
+  color: #666;
+  letter-spacing: .05em;
+  line-height: 1.5em;
+}
+
+.todo-item > .todo-body > button {
+  width: 100%;
+  
+  padding: .7em;
+  font-size: 14px;
+
+  background: #FF756B;
+  color: #fff;
+
+  box-shadow: 0px 10px 20px hsla(4, 54%, 37%, .25);
+  border: 0px;
+  border-radius: 5px;
+
+  letter-spacing: .15em;
+  font-weight: 700;
+
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.todo-item > .todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 20px;
+  letter-spacing: .1em;
+  font-weight: 500;
+  color: #444;
+}
+
+.todo-item .todo-title {
+  cursor: auto;
+  transition: .3s;
+}
+
+.todo-item .todo-complete {
+  display: block;
+  width: 30px; height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid silver;
+
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(180, 180, 180, .25);
+  transition: .3s;
+}
+
+.todo-item-completed .todo-title {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.todo-item-completed .todo-complete {
+  background: #eee;
+}
+
+.todo-body-toShow {
+  display: block!important;
+}
